@@ -27,11 +27,39 @@ Calculator Styles
 .data-entry {
     max-width: 70%;
     margin: 10px auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+label {
+    font-size: 2vh;
+    font-weight: bold;
+}
+input {
+    width: 50%;
+    font-size: 2vh;
+}
+select {
+    width: 50%;
+    font-size: 2vh;
 }
 
 .info-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(50px,);
     grid-gap: 10px;
-    
+    justify-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.calculate-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 3vh;
+    background-color: #004f13;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border-radius: 10px;
 }

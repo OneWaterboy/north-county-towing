@@ -19,6 +19,12 @@
                     <input type="date" id="out-date" name="out-date">
                 <label for="out-time">Date Vehicle Is/Will Leave Yard (24Hour Format):</label> 
                     <input type="time" id="out-time" name="out-time">           <!--This will be in 24 hour time-->
+                <label for="requestor">Who Requested The Tow?</label>
+                    <select name="requestor" id="labor-charges">
+                        <option value="">Select Requestor From List</option>
+                        <option value="type-one">WSP / SCSO / STILLY</option>
+                        <option value="type-two">APD / TPD / PVT</option>
+                    </select>
                 <label for="tow-hours">Number of Labor Hours For Tow</label>
                     <select name="tow-hours" id="labor-hours-select">
                         <option value="">Select Number Of Labor Hours</option>
@@ -41,6 +47,7 @@
                     <option value="no">No</option>
                 </select>
             </form>
+            <button class="calculate-btn">Calculate Fees</button>
         </div>
 
         <div class="fee-calculations">

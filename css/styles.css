@@ -31,6 +31,13 @@ Calculator Styles
     margin-bottom: 5vh;
 }
 
+.fee-calculations {
+    max-width: 70%;
+    margin: 10px auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
 label {
     font-size: 2vh;
     font-weight: bold;
@@ -44,7 +51,7 @@ select {
     font-size: 2vh;
 }
 
-.info-form{
+.calc-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;

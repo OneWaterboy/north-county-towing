@@ -10,7 +10,7 @@
     <h1 class="calculator-heading">Calculate Pickup Fees</h1>
         <div class="data-entry">
             <h2 class="box-title">Enter Vehicle Information</h2>
-            <form class="info-form">
+            <form class="calc-form">
                 <label for="arrival-date">Date Of Arrival At Yard:</label>
                     <input type="date" id="arrival-date" name="arrival-date">
                 <label for="arrival-time">Time of Arrival (24Hour Format):</label>
@@ -41,17 +41,22 @@
                         <option value="no">No</option>
                     </select>
                 <label for="cc-fee">Paying by Credit Card?</label>
-                <select name="cc-fee" id="cc-fee">
-                    <option value="">Credit Card Payment?</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
+                    <select name="cc-fee" id="cc-fee">
+                        <option value="">Credit Card Payment?</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
             </form>
             <button class="calculate-btn">Calculate Fees</button>
         </div>
 
         <div class="fee-calculations">
             <h2 class="box-title">Calculation Results</h2>
+            <form class="calc-form">
+                <label for="storage-total">Storage Total</label>
+                    <input type="number" name="storage-total" id="storage-total" readonly>
+
+            </form>
 
         </div>
 </body>

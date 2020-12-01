@@ -1,5 +1,5 @@
 /*======================================================
-Main Styles
+Main Site Styles
 =======================================================*/
 
 
@@ -13,6 +13,11 @@ Calculator Styles
 =======================================================*/
 .calculator{
     font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .calculator-heading{
     display: block;

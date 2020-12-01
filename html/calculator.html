@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fee Calculator | North County Towing</title>
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="calculator">
     <h1 class="calculator-heading">Calculate Pickup Fees</h1>
         <div class="data-entry">
             <h2 class="box-title">Enter Vehicle Information</h2>
@@ -53,10 +55,22 @@
         <div class="fee-calculations">
             <h2 class="box-title">Calculation Results</h2>
             <form class="calc-form">
+                <label for="labor-total">Labor Charge Total</label>
+                    <input type="number" name="labor-total" id="labor-total" readonly>
                 <label for="storage-total">Storage Total</label>
                     <input type="number" name="storage-total" id="storage-total" readonly>
-
+                <label for="gate-total">Gate Charge Total</label>
+                    <input type="number" name="gate-total" id="gate-total" readonly>
+                <label for="sub-total">Sub Total All Charges</label>
+                    <input type="number" name="sub-total" id="sub-total" readonly>
+                <label for="ccFee-total">Credit Card Fee Total</label>
+                    <input type="number" name="ccFee-total" id="ccFee-total" readonly>
+                <label for="tax-total">Storage Total</label>
+                    <input type="number" name="tax-total" id="tax-total" readonly>
+                <label for="total-charges">Total Charges For Release</label>
+                    <input type="number" name="total-charges" id="total-charges" readonly>
             </form>
+
 
         </div>
 </body>

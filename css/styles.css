@@ -11,7 +11,9 @@ Main Styles
 /*======================================================
 Calculator Styles
 =======================================================*/
-
+.calculator{
+    font-family: 'Roboto', sans-serif;;
+}
 .calculator-heading{
     display: block;
     margin: 0 auto;
@@ -22,6 +24,7 @@ Calculator Styles
     display: block;
     margin: 0 auto;
     text-align: center;
+    text-decoration: underline;
 }
 
 .data-entry {
@@ -29,6 +32,8 @@ Calculator Styles
     margin: 10px auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    border: 2px solid blue;
+    padding: 2vh;
 }
 
 .fee-calculations {
@@ -36,6 +41,8 @@ Calculator Styles
     margin: 10px auto;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    border: 2px solid red;
+    padding: 2vh;
 }
 
 label {

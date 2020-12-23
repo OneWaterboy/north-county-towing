@@ -28,7 +28,7 @@ a, p, h1 {
 
 .upper-contact-info{
     background-color: var(--color-logoGreen);
-    color: whitesmoke;
+    color: var(--main-site-themeColor);
     padding-top: 10px;
     position: fixed;
     z-index: 11;
@@ -64,7 +64,7 @@ a, p, h1 {
 
 .navbar {
     width: 100%;
-    background-color: whitesmoke;
+    background-color: var(--main-site-themeColor);
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -291,9 +291,7 @@ select {
 
     
 
-    .navbar{
+    .navbar {
         top: 8vh;
-    }
+    };
 }
-
-

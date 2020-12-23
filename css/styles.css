@@ -1,12 +1,186 @@
-/*======================================================
-Main Site Styles
-=======================================================*/
+
+
+/*============================================================
+                    Main Site Styles
+============================================================*/
+
+:root {
+
+    --color-logoGreen: #043811;
+    --color-logoGold: #d4af37;
+    --main-site-themeColor: whitesmoke;
+    --main-highlight-color: #FFFAFA;
+
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+a, p, h1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Top Bar - All Pages*/
+.logo {
+    max-height: 10vh;
+}
+
+.upper-contact-info{
+    background-color: var(--color-logoGreen);
+    color: whitesmoke;
+    padding-top: 10px;
+    position: fixed;
+    z-index: 11;
+}
+
+.mailto-link {
+    text-decoration: none;
+    color: var(--color-logoGold);
+    overflow: none
+}
+.container-fluid {
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.top-bar-column {
+    text-align: center;
+}
+
+
+.phone-number {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--color-logoGold);
+    text-decoration: none;
+}
+
+.email {
+    font-size: 0.8rem
+}
+
+/* Site Navigation Bar - All Pages */
+
+.navbar {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 10;
+    top: 6vh;
+}
+
+.container {
+    max-width: 90%;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+ul.navbar-nav a:hover {
+     color: var(--color-logoGreen) !important; 
+}
+.nav-link:active {
+    color: var(--color-logoGreen);
+}
+
+
+
+/* Building Out Site Social Icons*/
+
+.social-share {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 300px;
+    left: 0px;
+    max-height: auto;
+    max-width: auto;
+}
+
+.si-facebook {
+    height: 5vh;
+    width: 5vh;
+    background-image: url('../images/facebook-icon.png');
+    background-size: cover;
+    margin-top:10px
+}
+.si-instagram {
+    height: 5vh;
+    width: 5vh;
+    background-image: url('../images/instagram-icon.png');
+    background-size: cover;
+    margin-top:10px
+}
+.si-email{
+    height: 5vh;
+    width: 5vh;
+    background-image: url('../images/yahoo.png');
+    background-size: cover;
+    margin-top:10px
+}
 
 
 
 
+/*Footer Area*/
+
+.site-footer{
+    background-color: black;
+    height: 10vh;
+}
+
+.copyright-p {
+    color: var(--main-site-themeColor);
+    text-align: center;
+    align-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/*=================================================================
+                    Page Header Settings
+Small site so all header styling will go here for backgrounds etc.
+===================================================================*/
+
+.header {
+    height: 70vh;
+}
+
+.home-header {
+    background-image: url('../images/trauckonback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
 
 
+/*============================================================
+                    Individual Page Styles
+============================================================*/
+
+/* Home Page */
+
+.home-welcome-header {
+    text-align: center;
+}
+
+.card-row {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.card-title, .card-text {
+    text-align: center;
+}
+
+.btn {
+    margin: 0 auto;
+}
 
 /*======================================================
 Calculator Styles
@@ -82,3 +256,44 @@ select {
     border-radius: 10px;
     text-transform: uppercase;
 }
+
+/*============================================================
+                    Media Queries
+============================================================*/
+
+@media screen and (max-width: 1000px){
+    .navbar{
+        top: 6vh;
+    }
+    .social-share {
+        position: fixed;
+        bottom: 0;
+}
+
+@media screen and (min-width: 767px){
+    .navbar{
+        top: 8vh;
+    }
+}
+
+@media screen and (min-width: 1025px){
+
+    .logo-container{
+        width: auto;
+    }
+
+    .navbar{
+        top: 6vh;
+    }
+}
+
+@media screen and (min-width: 2000px){
+
+    
+
+    .navbar{
+        top: 8vh;
+    }
+}
+
+

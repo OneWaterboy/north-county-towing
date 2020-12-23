@@ -26,7 +26,8 @@ a, p, h1 {
     max-height: 10vh;
 }
 
-.upper-contact-info{
+
+.top-bar-column{
     background-color: var(--color-logoGreen);
     color: var(--main-site-themeColor);
     padding-top: 10px;
@@ -64,12 +65,14 @@ a, p, h1 {
 
 .navbar {
     width: 100%;
+    padding-left: 5vw;
+    padding-right: 10px;
     background-color: var(--main-site-themeColor);
     display: flex;
     flex-direction: row;
     position: fixed;
     z-index: 10;
-    top: 6vh;
+    
 }
 
 .container {
@@ -86,6 +89,14 @@ ul.navbar-nav a:hover {
 }
 .nav-link:active {
     color: var(--color-logoGreen);
+}
+
+.toggler-div {
+    padding-right: 50px
+}
+
+.logo-container {
+    max-width: 50%;
 }
 
 
@@ -261,37 +272,25 @@ select {
                     Media Queries
 ============================================================*/
 
-@media screen and (max-width: 1000px){
+/*@media screen and (max-width: 1000px){
     .navbar{
         top: 6vh;
     }
     .social-share {
         position: fixed;
         bottom: 0;
-}
+}*/
 
 @media screen and (min-width: 767px){
-    .navbar{
-        top: 8vh;
-    }
+    
 }
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 992px){
 
     .logo-container{
         width: auto;
     }
-
-    .navbar{
-        top: 6vh;
-    }
 }
 
 @media screen and (min-width: 2000px){
-
-    
-
-    .navbar {
-        top: 8vh;
-    };
 }

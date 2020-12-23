@@ -66,7 +66,7 @@ a, p, h1 {
 .navbar {
     width: 100%;
     padding-left: 5vw;
-    padding-right: 10px;
+    padding-right: 5vw;
     background-color: var(--main-site-themeColor);
     display: flex;
     flex-direction: row;
@@ -89,10 +89,6 @@ ul.navbar-nav a:hover {
 }
 .nav-link:active {
     color: var(--color-logoGreen);
-}
-
-.toggler-div {
-    padding-right: 50px
 }
 
 .logo-container {

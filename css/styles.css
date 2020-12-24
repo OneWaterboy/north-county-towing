@@ -190,12 +190,14 @@ Small site so all header styling will go here for backgrounds etc.
     text-align: center;
 }
 
-.btn {
-    margin: 0 auto;
+/* Aucction Page*/
+
+.auction-rules{
+    text-align: center;
 }
 
-.homepage-map {
-    margin: 0 auto;
+.auction-list {
+    margin: 10vw;
 }
 
 

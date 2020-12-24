@@ -21,6 +21,10 @@ a, p, h1 {
     font-family: 'Work Sans', sans-serif;
 }
 
+iframe {
+    display: block;
+    margin: 0 auto
+}
 /* Top Bar - All Pages*/
 .logo {
     max-height: 10vh;
@@ -189,6 +193,11 @@ Small site so all header styling will go here for backgrounds etc.
 .btn {
     margin: 0 auto;
 }
+
+.homepage-map {
+    margin: 0 auto;
+}
+
 
 /*======================================================
 Calculator Styles

@@ -23,7 +23,11 @@ a, p, h1 {
 
 iframe {
     display: block;
-    margin: 0 auto
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    
 }
 /* Top Bar - All Pages*/
 .logo {

@@ -15,16 +15,19 @@
 <body>
     <!--Social Media Icons To Use Site Wide-->
     <div class="social-share">
-        <div class="si si-facebook">
-            <a href="https://facebook.com"></a>
-        </div>
-        <div class="si si-email">
-            <a href="mailto:northcounty_towing@yahoo.com" ></a>
-        </div>
-        <div class="si si-phone">
-            <a href="tel:3604031042"></a>
-        </div>
-      </div>
+        <a href="https://facebook.com" target="_blank">
+            <div class="si si-facebook">
+            </div>
+        </a>
+        <a href="mailto:northcounty_towing@yahoo.com" target="_blank" >
+            <div class="si si-email">
+            </div>
+        </a>
+        <a href="tel:3604031042" target="_blank">
+            <div class="si si-phone">
+            </div>
+        </a>
+    </div>
       <!-- Navigation -->
       </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
@@ -41,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://ncountytowing.com">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="auction.html">Auction</a>
@@ -60,7 +63,56 @@
         <div class="header home-header">
         </div>
         <main>
-
+            <p class="services-paragraph"> <strong>We highly encourage</strong> anyone who needs our services to <strong>give <a href="tel:3604031042">us a call</a> </strong>and get a quote today! If you are not
+            in a hurry and are just looking for a general quote or price for a future job the fill out the form and we willl get back to you within
+            24 hours with a quote.
+            </p>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name</label>
+                    <input type="name" class="form-control" id="inputEmail4" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
         </main>
         <!--Site wide Footer-->
         <div class="container-fluid site-footer">

@@ -10,9 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--Local Style Sheet-->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <!--Meta Description For Search Results-->
-    <meta name="description" content="North County Towing is North Snohomish County's Premiere towing provider.">
-    <title>North County Towing | Home </title>
+    <title>Service Request | North County Towing </title>
 </head>
 <body>
     <!--Social Media Icons To Use Site Wide-->
@@ -69,45 +67,62 @@
             in a hurry and are just looking for a general quote or price for a future job then fill out the form and we willl get back to you within
             24 hours with a quote.
             </p>
-            <form>
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <label for="firstName">First Name</label>
-                    <input type="name" class="form-control" id="firstName" placeholder="First Name">
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                  </div>
+            <form class="svc-form form-inline">
+              <div class="form-row">
+                <div class="form-group col-md-4 contact">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-4 contact">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="email" class="form-control" id="phoneNumber" placeholder="ex. 425-555-5551">
+                </div>
+              </div>
+              <div class="form-row form-inline">
+                <div class="form-group">
+                  <label for="startingAddress"> Pickup Street Address</label>
+                  <input type="text" class="form-control" id="startingAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="startingCity">City</label>
+                  <input type="text" class="form-control" id="startingCity">
                 </div>
                 <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  <label for="endingAddress"> Drop Off Street Address</label>
+                  <input type="text" class="form-control" id="endingAddress" placeholder="1234 Main St">
                 </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <div class="form-group col-md-6">
+                  <label for="endingCity">City</label>
+                  <input type="text" class="form-control" id="endingCity">
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-2 vehicle">
+                  <label for="vehicleYear">Year Of Vehicle</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="ex. 1981">
                 </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
+                <div class="form-group col-md-2 vehicle">
+                  <label for="vehicleMake">Make Of Vehicle</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="ex. Ford">
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </form>
+                <div class="form-group col-md-2 vehicle">
+                  <label for="vehicleModel">Model of Vehicle</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="ex. Firebird">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="describeServiceNeeds">Describe Your Service Needs</label>
+                <textarea class="form-control" id="describeServiceNeeds" rows="3" placeholder="Describe your service needs. The more info you can give, the better quote we can provide to you!"></textarea>
+              </div>
+              <p class="quoteDisclaimer">
+                Due to the sometimes demanding nature of our work, details will matter! For this reason please make sure to <strong>provide an 
+                accurate description of the vehicles condition</strong> and the service that you need in the space provided above. If we 
+                find that you have missed details, then <strong>your quote is subject to change upon our drivers arrival.</strong>
+              </p>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary svc-button form-btn">Request A Quote</button>
+              </div>
+            </form>
         </main>
         <!--Site wide Footer-->
         <div class="container-fluid site-footer">

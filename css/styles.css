@@ -14,7 +14,7 @@
 }
 
 main {
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
 }
 a, p, h1 {
@@ -149,7 +149,8 @@ ul.navbar-nav a:hover {
 
 .site-footer{
     background-color: black;
-    height: 10vh;
+    height: auto;
+    max-height: 20vh;
 }
 
 .copyright-p {
@@ -227,6 +228,27 @@ Small site so all header styling will go here for backgrounds etc.
 
 .services-paragraph {
     text-align: center;
+    margin: 0 auto;
+}
+
+.svc-form {
+    max-width: 85%;
+    margin: 5vh auto;
+}
+
+.contact, .vehicle {
+    display: inline-block;
+}
+
+.form-btn {
+    margin-top: 4vh;
+    font-weight: bold;
+}
+
+.quoteDisclaimer{
+    max-width: 70%;
+    text-align: center;
+    margin: 10px auto;
 }
 
 

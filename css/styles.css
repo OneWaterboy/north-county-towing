@@ -200,6 +200,12 @@ Small site so all header styling will go here for backgrounds etc.
     text-align: center;
 }
 
+.svc-button {
+    background-color: var(--color-logoGold) !important;
+    border: none !important;
+    color: var(--color-logoGreen) !important;
+}
+
 /* Auction Page*/
 
 .auction-rules{

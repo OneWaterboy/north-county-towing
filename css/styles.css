@@ -196,6 +196,10 @@ Small site so all header styling will go here for backgrounds etc.
     text-align: center;
 }
 
+.locate-link {
+    text-align: center;
+}
+
 /* Auction Page*/
 
 .auction-rules{

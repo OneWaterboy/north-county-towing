@@ -103,6 +103,9 @@ ul.navbar-nav a:hover {
     max-width: 50%;
 }
 
+.custom-toggler .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%4, 56, 17, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 
 /* Building Out Site Social Links*/
@@ -251,6 +254,11 @@ Small site so all header styling will go here for backgrounds etc.
     margin: 10px auto;
 }
 
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 /*======================================================
 Calculator Styles
@@ -331,14 +339,14 @@ select {
                     Media Queries
 ============================================================*/
 
-/*@media screen and (max-width: 1000px){
-    .navbar{
-        top: 6vh;
+
+@media screen and (max-width: 481px){
+    .header {
+        position: relative;
+        right: 50px;
     }
-    .social-share {
-        position: fixed;
-        bottom: 0;
-}*/
+}
+
 
 @media screen and (min-width: 767px){
     

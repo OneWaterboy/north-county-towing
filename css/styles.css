@@ -263,6 +263,10 @@ Small site so all header styling will go here for backgrounds etc.
 /*======================================================
 Calculator Styles
 =======================================================*/
+.calc-one {
+    margin-top: 100vh;
+}
+
 .calculator{
     font-family: 'Roboto', sans-serif;
 }

@@ -1,19 +1,27 @@
 <?php
 
 #Receive user input
-$email_address = $_POST['email_address'];
-$feedback = $_POST['feedback'];
+$name = $_POST['name'];
+$telephone = $_POST['telephone'];
+$start = $_POST['starting_address'];
+$startcity = $_POST['starting_city'];
+$end = $_POST['ending_address'];
+$endcity = $_POST['ending_city'];
+$year = $_POST['vehyear'];
+$make = $_POST['vehmake'];
+$model = $_POST['vehmodel'];
+$description = $_POST['description'];
 
 #Filter user input
 function filter_email_header($form_field) {  
 return preg_replace('/[nr|!/<>^$%*&]+/','',$form_field);
 }
 
-$email_address  = filter_email_header($email_address);
+$name  = filter_email_header($name);
 
 #Send email
-$headers = "From: $email_addressn";
-$sent = mail('northcounty_towing@yahoo.com', 'Quote Request Form Submission', $feedback, $headers);
+$headers = "From: $name";
+$sent = mail('northcounty_towing@yahoo.com', 'Quote Request Form Submission', $name, $headers, $telephone, $start, $startcity, $end, $endcity, $year, $make, $model, $description);
 
 #Thank user or notify them of a problem
 if ($sent) {

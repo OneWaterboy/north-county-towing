@@ -217,14 +217,39 @@ Small site so all header styling will go here for backgrounds etc.
 }
 
 .auction-list {
-    margin-top: 10vw;
-    margin-bottom: 10vw;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
 }
 
 .auction-embed{
-    max-width: 100%;
+    width: 100%;
+    height: 480;
     overflow: hidden;
+}
+
+
+.auction-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2vw;
+    width: 100%;
+    margin: 5vh auto;
+    align-items: center;
+}
+
+#photos-link {
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.photo-a {
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /* Services Page */
@@ -360,6 +385,12 @@ select {
 
     .logo-container{
         width: auto;
+    }
+    .auction-grid {
+        grid-template-columns: 1fr 1fr
+    }
+    #photos-link {
+        display: none;
     }
 }
 

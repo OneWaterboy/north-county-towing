@@ -1,6 +1,5 @@
 
 //get starting date
-let startDay = document.getElementById("arrivalDate").value;
+let startDay = document.getElementById("arrivalDate");
 let startTime =  document.getElementById("arrivalTime").value;
-const startStorage = startDay + startTime;
-console.log(startStorage);
+let laborHours = document.getElementById("laborHoursSelect").value;

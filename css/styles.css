@@ -356,7 +356,9 @@ select {
 .calculate-btn {
     display: block;
     margin: 0 auto;
-    font-size: 1.2rem;
+    max-width: 50%;
+    text-align: center;
+    text-decoration: none;
     background-color: #004f13;
     color: whitesmoke;
     border-color: whitesmoke;

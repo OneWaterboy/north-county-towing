@@ -8,7 +8,10 @@ let startDay = document.getElementById("arrivalDate").addEventListener("change",
                     var input = this.value;
                     console.log(input);
                     });
-let startTime =  document.getElementById("arrivalTime").value;
+let startTime =  document.getElementById("arrivalTime").addEventListener("change", function() {
+                    var input = this.value;
+                    console.log(input);
+                    });
 
 //Get Pick Up Date or Estimated Pick Up Date
 
@@ -16,17 +19,31 @@ let pickUpDate = document.getElementById("outDate").addEventListener("change", f
                     var input = this.value;
                     console.log(input);
                     });
-let pickUpTime = document.getElementById("outTime").value;
+let pickUpTime = document.getElementById("outTime").addEventListener("change", function() {
+                    var input = this.value;
+                    console.log(input);
+                    });
 
 
-//Variables to determine cost calculations
+//Determine Cost Based off of fee rates
 
-let laborHours = document.getElementById("laborHoursSelect").value;
-let laborFees = document.getElementById("laborHoursSelect").value;
+let laborHours = document.getElementById("laborCharges").addEventListener("change", function() {
+                    var input = this.value;
+                    console.log(input);
+                    });
+let laborFees = document.getElementById("laborHoursSelect").addEventListener("change", function() {
+                    var input = this.value;
+                    if(input === "wspRates"){
+                        console.log(laborHours * 184)
+                    } else if (input === "pvtRates") {
+                        console.log(laborHours * 248)
+                    }
+                });
 
 
 function calculateTowingFees () {
-    let begin = startDay;
-    let end = pickUpDate;
-    console.log(end - begin);
+    let begin = startDay + startTime;
+    let end = pickUpDate + pickUpTime;  // Need To Figure out how to build out a date object and the n subtract to get sotrage hours
+    console.log(begin);
+    console.log(end);
 }

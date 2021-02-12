@@ -41,8 +41,6 @@ let laborHours = document.getElementById("laborHoursSelect").addEventListener("c
 function calculateTowingFees () {
     let begin = startDay + startTime;
     let end = pickUpDate + pickUpTime;  // Need To Figure out how to build out a date object and the n subtract to get sotrage hours
-    let impoundCharge = parseInt(laborRate) * parseInt(laborHours);
-    console.log(begin);
-    console.log(end);
+    let impoundCharge = Number(laborRate) * Number(laborHours);
     console.log(impoundCharge);
 }

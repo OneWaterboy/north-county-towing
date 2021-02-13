@@ -6,12 +6,21 @@ function sayHello () {
 //Get Starting Date
 let startDay = document.getElementById("arrivalDate").addEventListener("change", function() {
                     var input = this.value;
-                    console.log(input);
+                    var dateInArray = input.split("-")
+                    console.log(dateInArray);
+                    
                     });
 let startTime =  document.getElementById("arrivalTime").addEventListener("change", function() {
                     var input = this.value;
-                    console.log(input);
+                    var timeInArray = input.split(":")
+                    console.log(timeInArray);
+                    return timeInArray;
                     });
+
+
+
+console.log(startDay);
+
 
 //Get Pick Up Date or Estimated Pick Up Date
 

@@ -1,4 +1,16 @@
 
+
+
+
+$(document).ready(function (){
+
+    let beginDate =    $('#arrivalDate').on('change', event => {
+                            var startDay = $(event.currentTarget).val();
+                            console.log(startDay);
+    })
+});
+
+/*
 function sayHello () {
     alert('Hello World');
 }
@@ -53,3 +65,5 @@ function calculateTowingFees () {
     let impoundCharge = Number(laborRate) * Number(laborHours);
     console.log(impoundCharge);
 }
+
+*/
